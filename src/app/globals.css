@@ -4,7 +4,22 @@
 
 
 .container {
-  max-width: 1280px;
+  max-width: 1200px;
   padding: 0 12px;
   margin: 0 auto;
 }
+
+
+
+
+  .btn {
+    @apply bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight;
+  }
+
+  .btn-primary {
+    @apply bg-black text-white;
+  }
+
+  .btn-text {
+    @apply text-black bg-transparent;
+  }
