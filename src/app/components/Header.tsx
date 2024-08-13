@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 w-screen">
+    <header className="sticky top-0 backdrop-blur-sm z-20">
         <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-3">
             <p className="text-white/60 hidden md:block ">Streamline your workflow and boost your productivity</p>
             <div className="inline-flex gap-1 items-center">
@@ -18,7 +18,7 @@ const Header = () => {
             <div className="container">
                 <div className="flex items-center justify-between">
                     <Image src={logo} alt={"Pathway logo"} height={40} width={40}/>
-                    <MdOutlineMenu className="h-5 w-5 md:hidden"/>
+                    <MdOutlineMenu className="h-8 w-8 md:hidden"/>
                     <nav className="hidden md:flex">
                         <ul className="flex gap-6 text-black/60 items-center">
                             <li>
