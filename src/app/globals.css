@@ -47,3 +47,13 @@
   .card {
     @apply p-10 border border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
   }
+
+  .element::before {
+    content: '';
+    top: 0.5rem;
+    bottom: 0;
+    width: 100%; 
+    filter: blur(8px); 
+    background: linear-gradient(to right, #F87BFF, #FB92CF, #FFDD9B, #C2F0B1, #2FD8FE); 
+    position: absolute; 
+}
