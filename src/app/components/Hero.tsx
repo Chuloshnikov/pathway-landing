@@ -51,24 +51,26 @@ const Hero = () => {
                             ease: "easeInOut",
                         }}
                         />
-                   <motion.div
-                   className="hidden md:block -top-8 -left-32 md:absolute"
-                   style={{
-                    translateY: transformY,
-                   }}
-                   >
-                        <Image src={cylinder} width={220} height={220} alt="Cylinder image" />
-                   </motion.div>
-                    <motion.div
-                    className="hidden lg:block absolute top-[524px] left-[448px] rotate-[30deg]"
-                    style={{
-                        rotate: 30,
-                        translateY: transformY,
-                    }}
-                    >
-                        <Image src={noodleImage} width={220} height={220} alt="Noodle image" />
-                    </motion.div>
-                    
+                        <motion.img src={cylinder.src} 
+                        width={220} 
+                        height={220} 
+                        alt="Cylinder image"  
+                        className="hidden md:block -top-8 -left-32 md:absolute"
+                        style={{
+                            translateY: transformY,
+                        }}
+                        />
+                        <motion.img
+                        src={noodleImage.src} 
+                        width={220} 
+                        height={220} 
+                        alt="Noodle image" 
+                        className="hidden lg:block absolute top-[524px] left-[448px] rotate-[30deg]"
+                        style={{
+                            rotate: 30,
+                            translateY: transformY,
+                        }}
+                        />
                 </div>
             </div>
         </div>
