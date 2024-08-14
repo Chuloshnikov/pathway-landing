@@ -4,7 +4,6 @@ import { GoArrowRight } from "react-icons/go";
 import cogImage from "../assets/cog.png";
 import cylinder from "../assets/cylinder.png";
 import noodleImage from "../assets/noodle.png";
-import Image from "next/image";
 import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
 
 const Hero = () => {
