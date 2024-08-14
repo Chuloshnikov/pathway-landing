@@ -130,7 +130,7 @@ export const Testimonials = () => {
                     From intuitive design to powerful features, our app has become an essential tool for users around the world
                 </p>
             </div>
-            <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to-bottom,transparent,black_25%,black_75%,transparent)] overflow-hidden">
+            <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to-bottom,transparent,black_25%,black_75%,transparent)] overflow-hidden max-h-[738px]">
                 <TestimonialsColumn testimonials={firstColumn} duration={15}/>
                 <TestimonialsColumn testimonials={secondColumn} className="hidden md:block" duration={19}/>
                 <TestimonialsColumn testimonials={thirdColumn} className="hidden lg:block" duration={17}/>
