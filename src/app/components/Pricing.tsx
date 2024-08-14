@@ -1,5 +1,7 @@
+"use client"
 import { FaCheck } from "react-icons/fa6";
 import { twMerge } from "tailwind-merge";
+import { motion } from "framer-motion";
 
 const pricingTiers = [
     {
@@ -75,9 +77,19 @@ const pricingTiers = [
                                 <h3 className={twMerge("text-lg font-bold text-black/50", tier.inverse === true && "text-white/60")}>{tier.title}</h3>
                                 {tier.popular && (
                                     <div className="inline-flex text-sm px-4 py-1.5 rounded-xl border border-white/20">
-                                    <span className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)] text-transparent bg-clip-text font-medium">
+                                    <motion.span 
+                                    animate={{
+                                        backgroundPositionX: '100%',
+                                    }}
+                                    transition={{
+                                        duration: 1,
+                                        repeat: Infinity,
+                                        ease: 'linear',
+                                        repeatType: "loop",
+                                    }}
+                                    className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF)] [background-size:200%] text-transparent bg-clip-text font-medium">
                                         Popular
-                                    </span>
+                                    </motion.span>
                                 </div>
                                 )}
                             </div>
